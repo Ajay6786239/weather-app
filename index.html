@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div id="app" class="weather-app">
+        <header>
+            <h1 id="greetingMessage">Good Day!</h1>
+            <input type="text" class="city" id="location" placeholder="Enter City Name" />
+            <button id="getWeatherBtn">Get Weather</button>
+            <button id="toggleTheme">Dark Mode</button>
+            <button id="toggleTemp">°C/°F</button>
+        </header>
+        <main id="weatherData">
+            <div id="currentWeather" class="weather-section">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div id="animatedIcon"></div>
+                    <p id="temperature"></p>
+                    <p id="weatherDescription"></p>
+                    <p id="humidity"></p>
+                    <p id="windSpeed"></p>
+                    <p id="localTime"></p>
+                </div>
+                <div id="airQuality"></div>
+            </div>
+            <div id="forecast" class="weather-section">
+                <h2>Hourly Forecast</h2>
+                <div id="hourlyForecast" class="forecast-grid"></div>
+                <h2>Weekly Forecast</h2>
+                <div id="weeklyForecast" class="forecast-grid"></div>
+            </div>
+            <div id="tips" class="weather-section">
+                <h2>Weather Tips</h2>
+                <p id="weatherTips"></p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
